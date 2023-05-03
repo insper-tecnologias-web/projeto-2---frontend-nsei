@@ -32,16 +32,19 @@ function Formulario(props){
     
     return (
         <form className="form-card" onSubmit={buscaFilme}>
-        <input
-          className="form-card-title"
-          type="text"
-          name="titulo"
-          placeholder="Título do Filme"
-          onChange={atualizaTitulo}
-          value={titulo}
-        />
+          <div className='form-main-div'>
+            <input
+              className="form-card-title"
+              type="text"
+              name="titulo"
+              placeholder="Título do Filme"
+              onChange={atualizaTitulo}
+              value={titulo}
+            />
+            
+            <button className="btn" type="submit">Buscar</button>
+          </div>
         
-        <button className="btn" type="submit">Buscar</button>
       </form>
     );
 }
