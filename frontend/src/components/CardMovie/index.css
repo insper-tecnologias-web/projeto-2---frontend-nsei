@@ -1,0 +1,29 @@
+.card-movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex-grow: 1; */
+  color: antiquewhite;
+  height: 32em;
+  width: 16em;
+  border: 0.01em solid #8643d3;
+  border-radius: 0.2em;
+  margin: 0.5em;
+  padding: 0.5em;
+  
+}
+
+.card-movie-title {
+  padding: 0.5em 0em;
+  font-size: 1.4em;
+}
+
+.card-movie-img {
+  width: 16em;
+}
+
+.card-movie-description {
+  padding: 0.5em 0em;
+  font-size: 1em;
+}

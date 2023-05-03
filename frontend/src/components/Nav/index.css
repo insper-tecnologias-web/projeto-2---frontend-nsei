@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3.2em 2em 3.2em;
+  flex-grow: 1;
+  color: antiquewhite;
+  font-size: 1.15em;
+}
+
+img {
+  width: 7em
+}
+
+a {
+  all: unset;
+}
+
+.nav-list-item {
+  display: flex;
+  border: 0.01em solid antiquewhite;
+  border-radius: 0.3em;
+  padding: 0.4em 0.8em;
+  margin: 0.1em;
+  font-size: 1.5em;
+}
+
+.nav-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-style-1 {
+  background-color: #8643d3;
+  border: none;
+  color: white;
+  padding: 0.4em 0.8em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.4em;
+}
+
+.button-style-2 {
+  padding: 0.4em 0.8em;
+  text-align: center;
+  text-decoration: none;
+}
