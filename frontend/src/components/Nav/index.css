@@ -1,29 +1,28 @@
+
 nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(211, 201, 226, 0.15)
+}
+
+.nav-div-main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 3.2em 2em 3.2em;
-  flex-grow: 1;
-  color: antiquewhite;
   font-size: 1.15em;
+  width: 97vw;
+  height: 2.6em;
+  padding: 0em 1em 0em 1em;
 }
 
-img {
-  width: 7em
+.logo-img {
+  width: 4.5em
 }
 
 a {
   all: unset;
-}
-
-.nav-list-item {
-  display: flex;
-  border: 0.01em solid antiquewhite;
-  border-radius: 0.3em;
-  padding: 0.4em 0.8em;
-  margin: 0.1em;
-  font-size: 1.5em;
 }
 
 .nav-div {

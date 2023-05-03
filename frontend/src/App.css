@@ -42,7 +42,7 @@ body {
   flex-direction: column;
   /* align-items: center; */
   flex-grow: 1;
-  min-height: 100vh;
+  min-height: 200vh;
   background-color: #0b0c26;
   color: antiquewhite;
 }
@@ -52,4 +52,11 @@ main {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.espaco-vazio {
+  height: 3em;
+  background-color: #8643d3;
+  padding: 0 3em;
+
 }

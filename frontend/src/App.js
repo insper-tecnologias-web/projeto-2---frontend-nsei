@@ -17,7 +17,10 @@ function App() {
 
   return (
     <div className="App">
+    <div className="espaco-vazio"></div>
+
       <Nav />
+
       <Formulario />
       <main>
         <ul>
