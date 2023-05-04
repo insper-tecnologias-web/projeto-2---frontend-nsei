@@ -12,7 +12,7 @@
   margin: 0.5em;
   margin-top: 3em;
   padding: 0.5em;
-  background: linear-gradient(120deg, rgba(83, 23, 130, 0.2), rgba(83, 23, 130, 1));
+  background: linear-gradient(45deg, rgba(83, 23, 130, 0.05), rgba(83, 23, 130, 0.65));
 }
 
 .card-movie-title {

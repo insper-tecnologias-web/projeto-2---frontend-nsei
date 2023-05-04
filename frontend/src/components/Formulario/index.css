@@ -4,9 +4,6 @@
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  /* margin: 2rem auto; */
-  /* box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%); */
-  /* padding-top: 2.65em; */
   min-height: 85vh;
   background-image: url("../../img/cinema.jpg");
   background-repeat: no-repeat;
@@ -20,6 +17,7 @@
 .form-main-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .form-card input,
@@ -32,9 +30,11 @@
 
 .form-card-title {
   font-weight: bold;
-  line-height: 1.2;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  border-radius: 0.3em;
+  width: 12em;
+  height: 1.15em;
 }
 
 .btn {
@@ -42,43 +42,10 @@
 
   border-width: 0;
   outline: none;
-  border-radius: 2px;
+  border-radius: 0.3em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   color: #f9f9f9;
   background-color: #8643d3;
-
-  transition: background-color 0.3s;
-}
-
-.btn > * {
-  position: relative;
-}
-
-.btn:before {
-  content: "";
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  display: block;
-  width: 0;
-  padding-top: 0;
-
-  border-radius: 100%;
-
-  background-color: rgba(236, 240, 241, 0.3);
-
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.btn:active:before {
-  width: 120%;
-  padding-top: 120%;
-
-  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+  width: 5em;
+  height: 1.5em;
 }

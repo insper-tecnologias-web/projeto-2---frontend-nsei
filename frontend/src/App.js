@@ -35,11 +35,11 @@ function App() {
         <div className="footer-div">
           <div className='footer-div-item'>
             <h4>Pedro Ivo A. Lima</h4>
-            <p>pedroivoal1@gmail.com</p>
+            <a>pedroivoal1@gmail.com</a>
           </div>
           <div className='footer-div-item'>
             <h4>Rod Meo</h4>
-            <p>RodMeo@gmail.com</p>
+            <a>RodMeo@gmail.com</a>
           </div>
         </div>
       </footer>
