@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #030328;
+  height: 5em;
+  padding-top: 3em;
+  /* background: linear-gradient(0deg, rgb(80, 25, 120), rgba(3, 3, 40, 1)); */
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-div-item {
+  padding: 0em 3em;
+}

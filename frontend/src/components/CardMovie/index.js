@@ -4,9 +4,6 @@ import iconSave from '../../img/icon-save.png'
 import iconLike from '../../img/icon-like.png'
 
 function CardMovie(props) {
-  // console.log(props.id)
-  // console.log(props)
-  // if ()
   if (props.children.primaryImage.caption.plainText.split(' in')[0].endsWith(')')){
     return (
       <div className="card-movie">

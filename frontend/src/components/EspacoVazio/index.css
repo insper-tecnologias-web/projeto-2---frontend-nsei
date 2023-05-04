@@ -1,0 +1,27 @@
+.espaco-vazio-3em {
+  height: 3em;
+  background-color: #030328;
+}
+
+.espaco-vazio-4em {
+  height: 4em;
+  background-color: #030328;
+}
+
+.espaco-vazio-3em-linear-gradient-180 {
+  height: 3em;
+  background-color: rgb(80, 25, 120);
+  background: linear-gradient(180deg, rgb(80, 25, 120), rgb(3 3 40));
+}
+
+.espaco-vazio-4em-linear-gradient-0 {
+  height: 4em;
+  background-color: rgb(80, 25, 120);
+  background: linear-gradient(0deg, rgb(80, 25, 120), rgb(3 3 40));
+}
+
+.espaco-vazio-4em-linear-gradient-180 {
+  height: 4em;
+  background-color: rgb(80, 25, 120);
+  background: linear-gradient(180deg, rgb(80, 25, 120), rgba(3, 3, 40, 1));
+}

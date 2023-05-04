@@ -3,8 +3,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100vw;
-  background-color: rgba(211, 201, 226, 0.08);
-  /* background: linear-gradient(180, rgba(211, 201, 226, 1), rgba(211, 201, 226, 0.5)); */
+  background-color: rgba(211, 201, 226, 0.05);
 }
 
 .nav-div-main {

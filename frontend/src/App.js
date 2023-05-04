@@ -3,6 +3,8 @@ import axios from "axios";
 import Nav from './components/Nav';
 import Formulario from './components/Formulario';
 import CardMovie from './components/CardMovie';
+import Footer from './components/Footer';
+import EspacoVazio from './components/EspacoVazio';
 import './App.css';
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
   useEffect(() => {
     axios.request({
       method: 'GET',
-      url: 'https://moviesdatabase.p.rapidapi.com/titles/search/title/ring',
+      url: 'https://moviesdatabase.p.rapidapi.com/titles/search/title/',
       params: {
         exact: 'false',
         titleType: 'movie',
@@ -25,7 +27,6 @@ function App() {
     })
     .then((res) =>{
       setFilmes(res.data.results);
-      // console.log(res.data.results);
     })
   }, []);
 
@@ -45,51 +46,38 @@ function App() {
     })
     .then((res) =>{
       setFilmes(res.data.results);
-      // console.log(res.data.results);
     })
   }
 
   return (
     <div className="App">
-      <div className="espaco-vazio-1"></div>
 
+      <EspacoVazio tipo="3em-linear-gradient-180" />
       <Nav />
 
       <Formulario buscaTitulo={buscaTitulo}/>
-      
-      <div className="espaco-vazio-4"></div>
+      <EspacoVazio tipo="3em" />
 
       <main className='plan-picker-band-parent'>
-      {filmes.map((filme) => {
-        // console.log(filme)
-        // console.log(filme.primaryImage)
-        if (filme.titleType.id === 'movie' & filme.primaryImage !== null & filme.releaseDate !== null) {
-          return (
-            <CardMovie key={`filme__${filme.id}`} title={filme.titleText.text}>
-              {filme}
-            </CardMovie>
-          )
-        } else {
-          return null;
-        }
-      })}
-        
+        <div className='card-container'>
+          {filmes.map((filme) => {
+            if (filme.titleType.id === 'movie' & filme.primaryImage !== null & filme.releaseDate !== null) {
+              return (
+                <CardMovie key={`filme__${filme.id}`} title={filme.titleText.text}>
+                  {filme}
+                </CardMovie>
+              )
+            } else {
+              return null;
+            }
+          })}
+        </div>
       </main>
 
-      <footer>
-        <h3>Criadores</h3>
-        <div className="footer-div">
-          <div className='footer-div-item'>
-            <h4>Pedro Ivo A. Lima</h4>
-            <a>pedroivoal1@gmail.com</a>
-          </div>
-          <div className='footer-div-item'>
-            <h4>Rod Meo</h4>
-            <a>RodMeo@gmail.com</a>
-          </div>
-        </div>
-      </footer>
+      <EspacoVazio tipo="4em-linear-gradient-0" />
+      <EspacoVazio tipo="4em-linear-gradient-180" />
 
+      <Footer />
     </div>
   );
 }
