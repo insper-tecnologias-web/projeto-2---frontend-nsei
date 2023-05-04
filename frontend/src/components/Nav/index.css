@@ -3,7 +3,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100vw;
-  background-color: rgba(211, 201, 226, 0.15);
+  background-color: rgba(211, 201, 226, 0.08);
+  /* background: linear-gradient(180, rgba(211, 201, 226, 1), rgba(211, 201, 226, 0.5)); */
 }
 
 .nav-div-main {
@@ -32,7 +33,7 @@ a {
 .button-style-1 {
   background-color: #8643d3;
   border: none;
-  color: white;
+  color: #f9f9f9;
   padding: 0.4em 0.8em;
   text-align: center;
   text-decoration: none;
@@ -40,6 +41,7 @@ a {
 }
 
 .button-style-2 {
+  color: #f9f9f9;
   padding: 0.4em 0.8em;
   text-align: center;
   text-decoration: none;

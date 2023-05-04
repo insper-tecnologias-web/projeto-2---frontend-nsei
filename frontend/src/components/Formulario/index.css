@@ -6,12 +6,15 @@
   align-items: center;
   /* margin: 2rem auto; */
   /* box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%); */
-  padding-top: 2.65em;
-  min-height: 60vh;
-  background-image: url(https://images.adsttc.com/media/images/58d5/3a58/e58e/ce48/a700/003f/slideshow/002.jpg?1490369108);
+  /* padding-top: 2.65em; */
+  min-height: 85vh;
+  background-image: url("../../img/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-size: 90vw;
+  background-color: #030328;
+
 }
 
 .form-main-div {
@@ -41,7 +44,7 @@
   outline: none;
   border-radius: 2px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-
+  color: #f9f9f9;
   background-color: #8643d3;
 
   transition: background-color 0.3s;

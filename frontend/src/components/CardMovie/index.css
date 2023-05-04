@@ -4,14 +4,15 @@
   justify-content: center;
   align-items: center;
   /* flex-grow: 1; */
-  color: antiquewhite;
+  color: #f9f9f9;
   height: 32em;
   width: 16em;
-  border: 0.01em solid #8643d3;
+  border: 0.1em solid rgba(211, 201, 226, 0.15);
   border-radius: 0.2em;
   margin: 0.5em;
+  margin-top: 3em;
   padding: 0.5em;
-  
+  background: linear-gradient(120deg, rgba(83, 23, 130, 0.2), rgba(83, 23, 130, 1));
 }
 
 .card-movie-title {
