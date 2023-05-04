@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     axios.request({
       method: 'GET',
-      url: 'https://moviesdatabase.p.rapidapi.com/titles/search/title/Rings',
+      url: 'https://moviesdatabase.p.rapidapi.com/titles/search/title/',
       params: {
         exact: 'false',
         titleType: 'movie',
