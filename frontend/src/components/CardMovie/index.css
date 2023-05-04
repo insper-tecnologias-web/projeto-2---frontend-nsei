@@ -1,9 +1,7 @@
 .card-movie {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  /* flex-grow: 1; */
   color: #f9f9f9;
   min-height: 20em;
   width: 16em;
@@ -20,6 +18,13 @@
   font-size: 1.4em;
 }
 
+.image-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
 .card-movie-img {
   width: 16em;
 }
@@ -27,4 +32,23 @@
 .card-movie-description {
   padding: 0.5em 0em;
   font-size: 1em;
+}
+
+.card-movie-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16em;
+}
+
+.icon {
+  height: 1.2em;
+  padding: 0em 0.1em;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 16em;
 }
