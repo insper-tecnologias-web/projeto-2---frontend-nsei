@@ -2,16 +2,26 @@ import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import Nav from './components/Nav';
 import Formulario from './components/Formulario';
-import './App.css';
 import CardMovie from './components/CardMovie';
+import './App.css';
 
 function App() {
-  const [notes, setNotes] = useState([]); 
+  const [filmes, setFilmes] = useState([]); 
 
   useEffect(() => {
-    axios
-      .get("https://moviesdatabase.p.rapidapi.com/titles")
-      .then((res) => setNotes(res.data));
+    axios.request({
+      method: 'GET',
+      url: 'https://moviesdatabase.p.rapidapi.com/titles/search/title/Star Wars',
+      params: {exact: 'true'},
+      headers: {
+    'X-RapidAPI-Key': '2ca0d79c55msh98582cf902758f1p123fd2jsn235deb4f3888',
+    'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
+  }
+    })
+    .then((res) =>{
+      setFilmes(res.data.results);
+      console.log(res.data.results);
+    })
   }, []);
 
   return (
@@ -27,6 +37,12 @@ function App() {
       <div className="espaco-vazio-4"></div>
 
       <main className='plan-picker-band-parent'>
+        {filmes.map((filme) => (
+          <h2 key={`note__${filme.titleText.text}`} title={filme.titleText.text}>
+            {filme.titleText.text}
+            <br />
+          </h2>
+        ))}
         <CardMovie />
       </main>
 
