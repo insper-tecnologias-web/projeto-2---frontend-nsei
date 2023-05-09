@@ -4,12 +4,19 @@ import iconSave from '../../img/icon-save.png'
 import iconLike from '../../img/icon-like.png'
 
 function CardMovie(props) {
+
+  function salvaFilme2(event) {
+    // console.log(props)
+    event.preventDefault()
+    props.salvaFilme(props)
+  }
+
   if (props.children.primaryImage.caption.plainText.split(' in')[0].endsWith(')')){
     return (
       <div className="card-movie">
         <div className="card-movie-head">
           <div className="options">
-            <a>
+            <a onClick={salvaFilme2}>
               <img className="icon" src={iconSave}/>
             </a>
             <a>

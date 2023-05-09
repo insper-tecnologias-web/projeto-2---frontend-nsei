@@ -30,6 +30,10 @@ function App() {
     })
   }, []);
 
+  function salvaFilme(filme) {
+    console.log(filme)
+  }
+
   function buscaTitulo(titulo){
     axios.request({
       method: 'GET',
@@ -63,7 +67,7 @@ function App() {
           {filmes.map((filme) => {
             if (filme.titleType.id === 'movie' & filme.primaryImage !== null & filme.releaseDate !== null) {
               return (
-                <CardMovie key={`filme__${filme.id}`} title={filme.titleText.text}>
+                <CardMovie key={`filme__${filme.id}`} title={filme.titleText.text} salvaFilme={salvaFilme}>
                   {filme}
                 </CardMovie>
               )
