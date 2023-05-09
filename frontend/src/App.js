@@ -31,7 +31,10 @@ function App() {
   }, []);
 
   function salvaFilme(filme) {
-    console.log(filme)
+    axios.post.request({
+      url: 'http://localhost:3001/filmes',
+      data: filme
+    })
   }
 
   function buscaTitulo(titulo){
