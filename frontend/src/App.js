@@ -35,6 +35,7 @@ function App() {
       url: 'http://localhost:3001/filmes',
       data: filme
     })
+    console.log(filme)
   }
 
   function buscaTitulo(titulo){
